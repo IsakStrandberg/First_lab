@@ -4,7 +4,7 @@ using namespace std;
 void main()
 {
 	void task1();
-	void task2();
+	void task2();//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 	void task3();
 	// declarations for tasks
 	string h;
