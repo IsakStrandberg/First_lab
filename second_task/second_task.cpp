@@ -2,10 +2,40 @@
 //
 
 #include <iostream>
+#include <string>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+
+	cout << "Please enter your name, age, gender, address, married(true/false), height(in metres)." << endl;
+	string name;
+	int age;
+	string gender;
+	string address;
+	bool married;
+	string areyoumarried;
+	float height;
+
+	cin >> name;
+	cin >> age;
+	cin >> gender;
+	getline(cin >> ws,address);//ws means whitespace
+	cin >> boolalpha >> married;//gets the boolean value of your string entry
+	cin >> height;
+
+	if (married == true) {//used to get the print ''married'' or ''not married'' at the printout
+		areyoumarried == "married";
+	}
+	else {
+		areyoumarried == "not married";
+	}
+
+	cout << name << " " << age << " " << gender << " " << address << " " << areyoumarried << " " << height << endl;
+
+
+	system("pause");
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
