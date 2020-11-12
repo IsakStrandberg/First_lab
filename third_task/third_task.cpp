@@ -8,27 +8,38 @@ using namespace std;
 
 int main()
 {
-    printf("Please enter your name, age, gender, address, married(true/false), height(in metres).\n");
+    printf("Please enter your name, age, gender, address, married(1/0), height(in metres).\n");
     char name[999];
-    int age;
+    int age = 0;
     char gender[999];
     char address[999];
-    int married;
-    float height;
+    int married = 0;
+    float height = 0.0;
 
-    scanf_s("%s", &name, 999);
-    scanf_s("%d", &age, 3);
-    scanf_s("%s", &gender, 999);
-    scanf_s("%s",&address, 999);
-    scanf_s("%d", &married, 4);
-    scanf_s("%f", &height, 999);
+    printf("name: ");
+    scanf_s("%[^\r\n]s", name, 999);// gör & automaiskt
 
-    printf("%s", &name, "\n");
-    printf("%d", &age, "\n");
-    printf("%s", &gender, "\n");
-    printf("%s", &address, "\n");
-    printf("%d", &married, "\n");
-    printf("%f", &height, "\n");
+    printf("age: ");
+    scanf_s(" %d", &age);
+
+    printf("gender: ");
+    scanf_s(" %[^\r\n]s", gender, 999);
+
+    printf("address: ");
+    scanf_s(" %[^\r\n]s", address, 999);// [^] <- läser in alla tecken till den hittar \r eller \n
+
+    printf("married(1/0): ");
+    scanf_s(" %d", &married);
+
+    printf("height: ");
+    scanf_s(" %f", &height);
+
+    printf("name: %s\n", name);// gör & automatisk
+    printf("age: %d\n", age);
+    printf("gender: %s\n", gender);
+    printf("address: %s\n", address);
+    printf("married: %d\n", married);
+    printf("height: %g\n", height);
 
     system("pause");
     return 0;
