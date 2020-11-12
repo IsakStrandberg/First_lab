@@ -1,20 +1,55 @@
-// First_task.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+using namespace std;
 
-int main()
+void main()
 {
-    std::cout << "Hello World!\n";
+	void task1();
+	void task2();
+	void task3();
+	// declarations for tasks
+	string h;
+	cin >> h;//input
+	while (true) {//infinite loop to choose task to check
+
+		if (h == "task1") {
+			task1();
+		}
+
+		else if (h == "task2") {
+			task2();
+		}
+
+		else if (h == "task3") {
+			task3();
+		}
+
+		else {
+			cout << "no valid input" << endl;
+		}
+	}
+
+
+	void task1();
+	{
+		int n;
+		cin >> n;
+		for (n; n > 0; n--) {
+			cout << "Hello world" << endl;
+		}
+		int x;
+		cin >> x;
+		while (x > 0) {
+			x = x - 1;
+			cout << "Hello world" << endl;
+		}
+		int z;
+		cin >> z;
+		do {
+			z = z - 1;
+			cout << "Hello world" << endl;
+		} while (z > 0);
+	}
+	system("pause");
+	return;
+
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
