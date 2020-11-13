@@ -23,7 +23,6 @@ int main()
             cout << n << endl;
         }
        
-        
     }
     
     system("pause");

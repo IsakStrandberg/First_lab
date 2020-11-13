@@ -6,12 +6,24 @@ using namespace std;
 
 int main()
 {
-
     char input[999];
     printf("Pyramid: ");
     scanf_s("%s", input, 999);
+    
+    if (input == "") {
 
-
+    }
+    else {
+        int b = (int)input - 48;
+        int x = 0;
+        while (x < b) {
+            x = x + 1;
+            printf("%d", x);
+        }
+        //for (int x = 1; x <= b; x++) {
+            //printf("%d", x);
+        //}
+    }
 
     system("pause");
     return 0;
